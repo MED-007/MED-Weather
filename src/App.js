@@ -140,7 +140,7 @@ const App = () => {
                   <BsEye/>
                 </div>
                 <div>
-                  Visibility{' '}
+                  Visibility ->
                   <span className='ml-2'>{data.visibility / 1000} Km</span>
                 </div>
               </div>
@@ -149,7 +149,7 @@ const App = () => {
                   <BsThermometer/>
                 </div>
                 <div className='flex'>
-                  Feels like
+                  Feels Like ->
                   <div className='flex ml-2'>{parseInt(data.main.feels_like)}
                     <TbTemperatureCelsius/>
                   </div>
@@ -162,15 +162,15 @@ const App = () => {
                   <BsWater/>
                 </div>
                 <div>
-                  Humidity
-                  <span className='ml-2'>{data.main.humidity} %</span>
+                  Humidity ->
+                  <span className='ml-2'>{data.main.humidity}%</span>
                 </div>
               </div>
               <div className='flex items-center gap-x-2'>
                 <div className='text-[20px]'>
                   <BsWind/>
                 </div>
-                <div>Wind <span className='ml-2'>{data.wind.speed} m/s</span></div>
+                <div>Wind -><span className='ml-2'>{data.wind.speed} m/s</span></div>
               </div>
             </div>
           </div>
