@@ -105,14 +105,14 @@ const App = () => {
   
   return (
     <div className='w-full h-screen bg-gradientBg bg-no-repeat bg-cover bg-center flex flex-col items-center justify-center px-4 lg:px-0'>
-      {errorMsg && (<div className='w-full max-w-[90vw] lg:max-w-[450px] bg-[red]/5 text-white font-bold absolute top-2 text-center lg:top-2 backdrop-blur-[60px] p-4 capitalize rounded-[50px]'>{`${errorMsg.response.data.message}`}</div>)}
-      <form className={`${animate ? 'animate-shake' : 'animate-none'} h-16  w-full max-w-[450px] rounded-full backdrop-blur-[30px] border-2 border-gray-600/20 mb-8`}>
+      {errorMsg && (<div className='w-full max-w-[90vw] lg:max-w-[450px] bg-red-700/40 text-white font-bold absolute top-2 text-center lg:top-2 backdrop-blur-[10px] p-4 capitalize rounded-[50px]'>{`${errorMsg.response.data.message}`}</div>)}
+      <form className={`${animate ? 'animate-shake' : 'animate-none'} h-16  w-full max-w-[450px] rounded-full backdrop-blur-[20px] border-2 border-gray-600/20 mb-8`}>
         <div className='h-full relative flex items-center justify-between p-2'>
           <input onChange={(e)=> handleInput(e)} className='flex-1 bg-transparent outline-none placeholder:text-white text-white text-[15px] font-light pl-6 h-full' type="text" placeholder='Search by City or Country'/>
           <button onClick={(e)=> handleSubmit(e)} className='bg-[brown] hover:bg-[#9a2727] w-20 h-12 rounded-full flex justify-center items-center transition'><IoMdSearch className='text-2xl text-white'/></button>
         </div>
       </form>
-      <div className='w-full max-w-[450px] bg-transparent min-h-[584px] text-white backdrop-blur-[30px] border-2 border-gray-600/20 rounded-[70px] py-12 px-6'>
+      <div className='w-full max-w-[450px] bg-transparent min-h-[584px] text-white backdrop-blur-[20px] border-2 border-gray-600/20 rounded-[70px] py-12 px-6'>
         {Loading ? <div className='w-full h-full flex justify-center items-center'><ImSpinner8 className='text-white text-5xl animate-spin'/></div> : 
         
           <div>

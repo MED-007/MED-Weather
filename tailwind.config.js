@@ -8,7 +8,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        gradientBg: "url('/src/assets/img/magicpattern-iAR6yhCkrxc-unsplash.jpg')",
+        gradientBg: "url('/src/assets/img/photorealistic-earth-planet (1).jpg')",
       },
       keyframes: {
         shake: {
